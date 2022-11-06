@@ -259,12 +259,43 @@ public class Main {
 //        }
 
          //7. Vòng lặp while
-         long randomNumber = Math.round(Math.random()*100+1);
-         while (randomNumber >=1)
-         {
-             System.out.println(randomNumber);
-             randomNumber --;
-         }
+//         long randomNumber = Math.round(Math.random()*100+1);
+//         while (randomNumber >=1)
+//         {
+//             System.out.println(randomNumber);
+//             randomNumber --;
+//         }
+        //8. Vòng lặp do while
+//        boolean isOnline =false;
+//        do {
+//            System.out.println(" Kiểm tra xem có ai online không");
+//            if (isOnline){
+//                System.out.println(" Đang online");
+//            }
+//            else
+//                System.out.println(" Không ai online");
+//        }while (isOnline);
+//        int year;
+//        Scanner scanner= new Scanner(System.in);
+//        System.out.println(" mời bạn nhập tuổi:");
+//        year=scanner.nextInt();
+//       // scanner.close();
+//        do {
+//            if (year<=0) {
+//                System.out.println(" bạn đã nhập sai, mời bạn nhập laị:");
+//                year= scanner.nextInt();
+//                if (year>0)
+//                {
+//                  System.out.println(" tuổi của bạn là: "+ (2022-year));
+//                }
+//               // scanner.close();
+//            }
+//            else System.out.println(" tuổi của bạn là: "+ (2022-year));
+//
+//        }while (year<=0);
+
+
+
         }
 
         }
