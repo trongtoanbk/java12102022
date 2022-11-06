@@ -239,24 +239,32 @@ public class Main {
 //            else System.out.println(a +" không phải số nguyên tố");
 //        }
         // Cách 2:
-        int a ;
-        Scanner scanner= new Scanner(System.in);
-        System.out.println(" Nhập vào số tự nhiên  a:");
-        a = scanner.nextInt();
-        scanner.close();
-        if (a <=2) {
-            System.out.println(a + "không phải số nguyên tố ");
-        }
-        else {
-            for (int i =2; i <a; i++) {
-                if (a % i == 0)
-                { System.out.println(a + " không phải số nguyên tố");
-                return;
-                }
-            }
-            System.out.println(a + " Là số nguyên tố");
+//        int a ;
+//        Scanner scanner= new Scanner(System.in);
+//        System.out.println(" Nhập vào số tự nhiên  a:");
+//        a = scanner.nextInt();
+//        scanner.close();
+//        if (a <=2) {
+//            System.out.println(a + "không phải số nguyên tố ");
+//        }
+//        else {
+//            for (int i =2; i <a; i++) {
+//                if (a % i == 0)
+//                { System.out.println(a + " không phải số nguyên tố");
+//                return;
+//                }
+//            }
+//            System.out.println(a + " Là số nguyên tố");
+//
+//        }
 
-        }
+         //7. Vòng lặp while
+         long randomNumber = Math.round(Math.random()*100+1);
+         while (randomNumber >=1)
+         {
+             System.out.println(randomNumber);
+             randomNumber --;
+         }
         }
 
         }
