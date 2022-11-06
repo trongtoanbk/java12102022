@@ -127,36 +127,53 @@ public class Main {
 //            System.out.println(year1 +" cach 2 la nam nhuận");
 //        else System.out.println( year1+" cach 2 khong la nam nhuan");
 
-        //5. Điều kiện Switch case
+        //. Điều kiện if
         // Bài toán: tính chỉ số BMI và đưa ra kết luận cơ thể
         // công thức bmi = cân năng (kg)/chiều cao (m)*chieu cao (m)
-        float canNang;
-        float chieuCao;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(" Nhập vào chiều cao (m):");
-        chieuCao = scanner.nextFloat();
-        System.out.println(" Nhập vào cân nặng (kg):");
-        canNang= scanner.nextFloat();
-        scanner.close();
-        Float BMI = canNang/(chieuCao*chieuCao);
-        String message = "";
-        if (BMI<18.5) {
-            message = " Gầy + Thấp";
-        } else if (18.5 <= BMI && BMI <=24.9) {
-            message =" Bingf thường";
-        }  else if (25 <= BMI && BMI <=29.9) {
-            message = "Hơi béo";
-        }
-        else if (30 <= BMI && BMI <=34.9) {
-            message = "Béo cấp độ 1";
-        }
-        else if (35 <= BMI && BMI <=39.9) {
-            message = "Béo cấp độ 2";
-        }else if (40 <= BMI) {
-            message = "Béo cấp độ 3";
-        }
+//        float canNang;
+//        float chieuCao;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println(" Nhập vào chiều cao (m):");
+//        chieuCao = scanner.nextFloat();
+//        System.out.println(" Nhập vào cân nặng (kg):");
+//        canNang= scanner.nextFloat();
+//        scanner.close();
+//        Float BMI = canNang/(chieuCao*chieuCao);
+//        String message = "";
+//        if (BMI<18.5) {
+//            message = " Gầy + Thấp";
+//        } else if (18.5 <= BMI && BMI <=24.9) {
+//            message =" Bingf thường";
+//        }  else if (25 <= BMI && BMI <=29.9) {
+//            message = "Hơi béo";
+//        }
+//        else if (30 <= BMI && BMI <=34.9) {
+//            message = "Béo cấp độ 1";
+//        }
+//        else if (35 <= BMI && BMI <=39.9) {
+//            message = "Béo cấp độ 2";
+//        }else if (40 <= BMI) {
+//            message = "Béo cấp độ 3";
+//        }
+//
+//        System.out.println(" Chỉ số BMI của bạn đang ở mức" + message);
 
-        System.out.println(" Chỉ số BMI của bạn đang ở mức" + message);
+        //5. Câu điều kiện Switch case
+        int month =5;
+        switch (month)
+        {
+            case 2:
+                System.out.println(" Quý 1");
+                break;
+            case 5:
+                System.out.println(" Quý 2");
+                break;
+                // break: thoát khỏi switch case và vòng lặp.
+                // nếu không có break thì chương trình sẽ mặc định những phần phía sau đúng hết
+            case 8:
+                System.out.println(" Quý 3");
+                break;
+        }
         }
 
 
