@@ -55,34 +55,78 @@ public class Main {
 
         //4. Câu điều kiện if
         // Ví dụ: Kiểm tra xem có phải năm nhuận không, nếu là năm nhuận thì hiện ra thông báo
-        int year;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Nhập vào năm bạn cần kiểm tra:");
-        year = scan.nextInt();
-        scan.close();
-        boolean isLeap = false;
-        if(year % 4 == 0)//chia hết cho 4 là năm nhuận
+//        int year;
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Nhập vào năm bạn cần kiểm tra:");
+//        year = scan.nextInt();
+//        scan.close();
+//        boolean isLeap = false;
+//        if(year % 4 == 0)//chia hết cho 4 là năm nhuận
+//        {
+//            if( year % 100 == 0)
+//            //nếu vừa chia hết cho 4 mà vừa chia hết cho 100 thì không phải năm nhuận
+//            {
+//                if ( year % 400 == 0)//chia hết cho 400 là năm nhuận
+//                    isLeap = true;
+//                else
+//                    isLeap = false;//không chia hết cho 400 thì không phải năm nhuận
+//            }
+//            else//chia hết cho 4 nhưng không chia hết cho 100 là năm nhuận
+//                isLeap = true;
+//        }
+//        else {
+//            isLeap = false;
+//        }
+//        if(isLeap==true)
+//            System.out.println(year + " là năm nhuận.");
+//        else
+//            System.out.println(year + " không phải là năm nhuận.");
+//
+//        }
+        int year1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập vào năm");
+        year1= scanner.nextInt();
+        scanner.close();
+        boolean isLeap =false;
+        if (year1 % 4 ==0)
         {
-            if( year % 100 == 0)
-            //nếu vừa chia hết cho 4 mà vừa chia hết cho 100 thì không phải năm nhuận
+            if (year1 % 100==0)
+            // Nếu vừa chia hết cho 4 và chia hết cho 100 thì không phải năm nhuận
             {
-                if ( year % 400 == 0)//chia hết cho 400 là năm nhuận
-                    isLeap = true;
-                else
-                    isLeap = false;//không chia hết cho 400 thì không phải năm nhuận
+            if (year1 % 400 ==0)
+            // nhưng chia hết cho 400 là năm nhuận
+
+                isLeap =true;
+            else
+                isLeap = false;
+
             }
-            else//chia hết cho 4 nhưng không chia hết cho 100 là năm nhuận
-                isLeap = true;
-        }
-        else {
-            isLeap = false;
-        }
-        if(isLeap==true)
-            System.out.println(year + " là năm nhuận.");
-        else
-            System.out.println(year + " không phải là năm nhuận.");
+
+            else isLeap= true; //chia hết cho 4 và không chia hết cho 100 là năm nhuận
+
 
         }
+        else isLeap=false; // không chia hết cho 4 không là năm nhuận
+        System.out.println(isLeap+"");
+
+        if (isLeap==true)
+        { System.out.println(year1+ " Là năm nhuận");}
+
+        else {System.out.println(year1 + " không phải là năm nhuận");}
+
+
+        // Cách 2:
+
+        //1. Năm nhuận là năm chia hết cho 400.
+        //2. Năm nhuận là năm chia hết cho 4 nhưng không chia hết cho 100.
+        if ((year1 % 4 ==0 && year1%4 !=0)||year1 %400 ==0)
+            System.out.println(year1 +" cach 2 la nam nhuận");
+        else System.out.println( year1+" cach 2 khong la nam nhuan");
+
+    }
+
+
 
 
     }
