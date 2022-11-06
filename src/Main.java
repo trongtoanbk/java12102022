@@ -296,17 +296,17 @@ public class Main {
 
 
         //9. Object and class
-        Animal meo = new Animal();
-        meo.name =" Milu";
-        meo.height =" 1.5";
-        meo.weight =" 1.6";
-
-        Animal meo1= new Animal();
-        meo1.name =" Aka";
-        meo1.height ="1";
-        meo1.weight = "2";
-
-        System.out.println(meo1.name);
+//        Animal meo = new Animal();
+//        meo.name =" Milu";
+//        meo.height =" 1.5";
+//        meo.weight =" 1.6";
+//
+//        Animal meo1= new Animal();
+//        meo1.name =" Aka";
+//        meo1.height ="1";
+//        meo1.weight = "2";
+//
+//        System.out.println(meo1.name);
 
 
 
