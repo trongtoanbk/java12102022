@@ -1,11 +1,12 @@
 public class Animal {
 
-
     //1: Thuộc tính (Properties - Props)
     // thuộc tính: Xử lý thông tin cho đối tượng
-    String name;
-    String height;
-    String weight;
+    private String name;
+   private String height;
+    private String weight;
+
+
 
     // 2: Phương thức khởi tạo
     public Animal(String name, String height, String weight){
@@ -13,5 +14,32 @@ public class Animal {
         this.height = height;
         this.weight = weight;
     }
+
+    //3: Getter, Setter => Phím tắt ALT + Insert
+
+    public String getName() {
+        return name;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHeight(String height) {
+        this.height = height;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
+    }
+
 
 }

@@ -308,6 +308,17 @@ public class Main {
 //
 //        System.out.println(meo1.name);
 
+        Animal meo = new Animal("Milu","1.8m", "2.5kg");
+        Animal meo2 = new Animal(" Akia","2.1m","4kg");
+
+
+        // Access modifier: phạm vi truy cập (public, protected, no modifier, private
+        // tính đóng gói : getter, Setter
+        // tính kế thừa
+        // tính đa hình
+        // tình trừu tượng
+
+
 
 
         }
