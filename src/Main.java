@@ -158,22 +158,47 @@ public class Main {
 //
 //        System.out.println(" Chỉ số BMI của bạn đang ở mức" + message);
 
-        //5. Câu điều kiện Switch case
-        int month =5;
-        switch (month)
-        {
-            case 2:
-                System.out.println(" Quý 1");
-                break;
-            case 5:
-                System.out.println(" Quý 2");
-                break;
-                // break: thoát khỏi switch case và vòng lặp.
-                // nếu không có break thì chương trình sẽ mặc định những phần phía sau đúng hết
-            case 8:
-                System.out.println(" Quý 3");
-                break;
-        }
+//        //5. Câu điều kiện Switch case
+//        int month =5;
+//        Scanner scanner= new Scanner(System.in);
+//        System.out.println(" Nhập vào tháng:");
+//        month = scanner.nextInt();
+//        scanner.close();
+//        switch (month)
+//        {
+//            case 1:
+//                System.out.println(" Quý 1");
+//                break;
+//            case 2:
+//                System.out.println(" Quý 1");
+//                break;
+//            case 3:
+//                System.out.println(" Quý 1");
+//                break;
+//            case 4:
+//                System.out.println(" Quý 2");
+//                break;
+//            case 5:
+//                System.out.println(" Quý 2");
+//                break;
+//            case 6:
+//                System.out.println(" Quý 2");
+//                break;
+//                // break: thoát khỏi switch case và vòng lặp.
+//                // nếu không có break thì chương trình sẽ mặc định những phần phía sau đúng hết
+//            case 7:
+//                System.out.println(" Quý 3");
+//                break;
+//            case 8:
+//                System.out.println(" Quý 3");
+//                break;
+//            case 9:
+//                System.out.println(" Quý 3");
+//                break;
+//            default:
+//                System.out.println(" Quý 4");
+//        }
+
         }
 
 
