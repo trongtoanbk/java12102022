@@ -199,10 +199,70 @@ public class Main {
 //                System.out.println(" Quý 4");
 //        }
 
+        // 6. Vòng lặp for => Duyệt dữ liệu
+//        for (int i=1; i<10; i++)
+//        {
+//            System.out.println(i);
+//        }
+        // Ví dụ: cho vòng lặp chạy từ 1-> 100, chỉ in ra số chẵn
+//        for (int i=1; i<=100; i++)
+//        {
+//            if (i%2==0)
+//            System.out.println(i);
+//           // else break;
+//        }
+
+        // Ví dụ 2: cho vòng lặp từ 100 ->1, in ra số chia hết cho 3
+//        for (int i=100; i>=1; i--)
+//        {
+//            if (i%3==0)
+//                System.out.println(i);
+//        }
+        // Ví dụ 3: Cho 1 số ngẫu nhiên, kiểm tra xem có phải số nguyên tố hay không
+        // Cách 1:
+//        int a ;
+//        int soNguyento =0;
+//        Scanner scanner= new Scanner(System.in);
+//        System.out.println(" Nhập vào số tự nhiên  a:");
+//        a = scanner.nextInt();
+//        for (int i=2; i<a; i++)
+//        {
+//            if (a%i==0)
+//                soNguyento ++;
+//        }
+//        if (a<=2)
+//        System.out.println(a + " không phải số nguyên tố");
+//
+//        else {
+//            if (soNguyento ==0)
+//            System.out.println(a + " là số nguyên tố");
+//            else System.out.println(a +" không phải số nguyên tố");
+//        }
+        // Cách 2:
+        int a ;
+        Scanner scanner= new Scanner(System.in);
+        System.out.println(" Nhập vào số tự nhiên  a:");
+        a = scanner.nextInt();
+        scanner.close();
+        if (a <=2) {
+            System.out.println(a + "không phải số nguyên tố ");
+        }
+        else {
+            for (int i =2; i <a; i++) {
+                if (a % i == 0)
+                { System.out.println(a + " không phải số nguyên tố");
+                return;
+                }
+            }
+            System.out.println(a + " Là số nguyên tố");
+
+        }
+        }
+
         }
 
 
-    }
+
 
 
 
