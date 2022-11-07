@@ -310,6 +310,10 @@ public class Main {
 
         Animal meo = new Animal("Milu","1.8m", "2.5kg");
         Animal meo2 = new Animal(" Akia","2.1m","4kg");
+        meo2.showinfor();
+
+        Cat cat = new Cat("Kity","1.7m","25kg","gray");
+        cat.showinfor();
 
 
         // Access modifier: phạm vi truy cập (public, protected, no modifier, private
@@ -318,6 +322,8 @@ public class Main {
         // tính đa hình
         // tình trừu tượng
 
+        PizzaStore pizzaStore = new PizzaStore();
+        pizzaStore.orderPizza(new PizzaCheese());
 
 
 

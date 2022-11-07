@@ -40,6 +40,13 @@ public class Animal {
     public void setWeight(String weight) {
         this.weight = weight;
     }
+    public void showinfor(){
+        String textName= "name:" + name;
+        String textHeight= "Height:" + height;
+        String textWeight= "Weight:" + weight;
+        System.out.println("Animal:\n "+ textName+"\n"+textHeight+"\n"+textWeight);
+
+    }
 
 
 }

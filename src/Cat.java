@@ -5,11 +5,10 @@ public class Cat extends Animal{
         this.color = color;   // thêm thuộc tính mới cho lớp mới
     }
 
-    public String getColor() {
-        return color;
-    }
+    @Override
+    public void showinfor() {
 
-    public void setColor(String color) {
-        this.color = color;
+        super.showinfor();
+        System.out.println("Color:"+color);
     }
 }
